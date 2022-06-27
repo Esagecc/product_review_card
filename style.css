@@ -64,6 +64,7 @@ h1, .prices {
 h1 {
     font-size: 30px;
     font-weight: 700;
+    color: var(--dk-blue);
     line-height: 30px;
     padding-bottom: 18px;
 }
@@ -101,11 +102,68 @@ button {
     padding: 15px 80px;
 }
 
+button:hover {
+    background-color: hsl(159, 35%, 21%);
+    cursor: pointer;
+}
+
 button img {
     padding-right: 10px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 800px) {
+    body {
+        justify-content: center;
+    }
+
+    .main {
+        width: 600px;
+        height: 450px;
+        margin: 155px auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .perfume {
+        padding-bottom: 24px;
+    }
+
+    h1 {
+        padding-bottom: 28px;
+    }
+
+    .text {
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+
+    .mob-pic {
+           display: none;
+        }
+
+    .desk-pic {
+        display: block;
+        width: 300px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    button {
+        padding: 15px;
+    }
+
+}
+    
+
+
 
 
